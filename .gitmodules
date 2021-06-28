@@ -1,3 +1,5 @@
 [submodule "Plugins/EasyLocalizationTool"]
 	path = Plugins/EasyLocalizationTool
 	url = https://github.com/zompi2/UE4EasyLocalizationTool.git
+	branch = main
+	update = merge
