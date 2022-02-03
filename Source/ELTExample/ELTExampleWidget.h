@@ -14,6 +14,7 @@ class ELTEXAMPLE_API UELTExampleWidget : public UUserWidget
 public:
 
 	void NativeConstruct() override;
+	void NativeDestruct() override;
 
 	UFUNCTION(BlueprintPure)
 	FString TestGetCurrentLanguage();
@@ -28,5 +29,9 @@ public:
 	bool TestSetLanguage(const FString& Lang);
 
 	UFUNCTION()
-	void TestOnLanguageChanged();
+	void TestOnLanguageChangedDynamic();
+
+private:
+
+	FDelegateHandle OnChangeHandle;
 };
