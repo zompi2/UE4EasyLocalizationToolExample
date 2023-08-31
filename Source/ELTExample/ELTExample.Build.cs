@@ -16,5 +16,10 @@ public class ELTExample : ModuleRules
 			"UMG",
 			"EasyLocalizationTool"
 		});
-	}
+
+        if (Target.bBuildEditor)
+        {
+			PrivateDependencyModuleNames.Add("EditorScriptingUtilities");
+        }
+    }
 }

@@ -17,6 +17,10 @@
 		{
 			"Name": "EasyLocalizationTool",
 			"Enabled": true
+		},
+		{
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true
 		}
 	]
 }
